@@ -5,8 +5,8 @@ const BACKGROUND_COLOR = "#ffffff";
 
 
 class BowlingButtons extends UIComponent<typeof BowlingButtons> {
-  panelHeight = 200;
-  panelWidth = 500;
+  panelHeight = 300;
+  panelWidth = 400;
     private buttonStyling = {width: 100, height: 100, borderRadius: 20, margin: 4};
   static propsDefinition = {};
   initializeUI(): UINode {
@@ -31,7 +31,7 @@ class BowlingButtons extends UIComponent<typeof BowlingButtons> {
           View({children: [
               Pressable({children: [
                   Text({text: "Join",
-                      style: {color: "white", width: 100, height: 100, borderRadius: 20}})],
+                      style: {color: "white", height: '100%', textAlignVertical: 'center', textAlign: 'center'}})],
                   style: {backgroundColor: "blue", ...this.buttonStyling}}),
               Pressable({children: [
                   Text({text: "Skip Turn",
